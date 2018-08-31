@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Incredibly basic cytoscape example</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+    <script src="js/cytoscape.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/dagre.min.js"></script>
+    <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.5.0/cytoscape-dagre.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/cytoscape-qtip@2.7.1/cytoscape-qtip.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.css"> -->
+
+</head>
+
+<style>
+    #cy {
+        height: 100%;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div id="cy"></div>
+    <script>
+        var datasets = $.getJSON("data-set-2.json");
+        $(function () {
+            var cy = window.cy = cytoscape({
+                container: document.getElementById('cy'),
+                boxSelectionEnabled: false,
+                autounselectify: true,
+                nodeDimensionsIncludeLabels: true,
+                elements: datasets,
+                style: [
+                    {
+                        selector: 'node',
+                        style: {
+                            // 'label': 'data(name)',
+                            'content': 'data(name)',
+                            'text-opacity': 0.5,
+                            'text-valign': 'top',
+                            'text-halign': 'center',
+                            'background-color': '#11479e',
+                            'shape': 'roundrectangle'
+                        }
+                    },
+
+                    {
+                        selector: 'edge',
+                        style: {
+                            'curve-style': 'bezier',
+                            'width': 4,
+                            'target-arrow-shape': 'triangle',
+                            'line-color': '#9dbaea',
+                            'target-arrow-color': '#9dbaea'
+                        }
+                    }
+                ],
+                layout: {
+                    name: 'dagre'
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

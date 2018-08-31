@@ -1,0 +1,240 @@
+{
+    "nodes": [
+        {
+            "data": {
+                "id": "01",
+                "kind": "Ear",
+                "name": "My_App_1.ear",
+                "jdk": "1.8_3_3",
+                "size": "13 MB",
+                "classes": "4303"
+            }
+        },
+        {
+            "data": {
+                "id": "02",
+                "kind": "War",
+                "name": "database-1.war",
+                "jdk": "1.6_3_3",
+                "size": "5 MB",
+                "classes": "303"
+            }
+        },
+        {
+            "data": {
+                "id": "03",
+                "kind": "War",
+                "name": "database-2.war",
+                "jdk": "1.5_3_3",
+                "size": "4 MB",
+                "classes": "13"
+            }
+        },
+        {
+            "data": {
+                "id": "04",
+                "kind": "Jar",
+                "name": "bull.jar",
+                "jdk": "1.4_3_3",
+                "size": "1 MB",
+                "classes": "3"
+            }
+        },
+        {
+            "data": {
+                "id": "05",
+                "kind": "Jar",
+                "name": "frog.jar",
+                "jdk": "1.3_3_3",
+                "size": "2 MB",
+                "classes": "3"
+            }
+        },
+        {
+            "data": {
+                "id": "06",
+                "kind": "Jar",
+                "name": "butterfly.jar",
+                "jdk": "1.9_3_3",
+                "size": "3 MB",
+                "classes": "33"
+            }
+        },
+        {
+            "data": {
+                "id": "07",
+                "kind": "ExternalJar",
+                "name": "apache-commons.jar",
+                "jdk": "1.7_3_3",
+                "size": "1 MB",
+                "classes": "38"
+            }
+        },
+        {
+            "data": {
+                "id": "08",
+                "kind": "Jar",
+                "name": "panda.jar",
+                "jdk": "1.9_3_3",
+                "size": "0.1 MB",
+                "classes": "9"
+            }
+        },
+        {
+            "data": {
+                "id": "09",
+                "kind": "Jar",
+                "name": "elephant.jar",
+                "jdk": "1.9_3_3",
+                "size": "0.1 MB",
+                "classes": "5"
+            }
+        },
+        {
+            "data": {
+                "id": "10",
+                "kind": "Jar",
+                "name": "lion.jar",
+                "jdk": "1.9_3_3",
+                "size": "0.1 MB",
+                "classes": "3"
+            }
+        },
+        {
+            "data": {
+                "id": "11",
+                "kind": "Jar",
+                "name": "giraffe.jar",
+                "jdk": "1.9_3_3",
+                "size": "0.1 MB",
+                "classes": "93"
+            }
+        },
+        {
+            "data": {
+                "id": "12",
+                "kind": "WarApp",
+                "name": "bakery.war",
+                "jdk": "1.7_3_3",
+                "size": "12 MB",
+                "classes": "535"
+            }
+        },
+        {
+            "data": {
+                "id": "13",
+                "kind": "Jar",
+                "name": "sugar.jar",
+                "jdk": "1.7_3_3",
+                "size": "2 MB",
+                "classes": "66"
+            }
+        },
+        {
+            "data": {
+                "id": "14",
+                "kind": "Jar",
+                "name": "flour.war",
+                "jdk": "1.7_3_3",
+                "size": "1 MB",
+                "classes": "24"
+            }
+        },
+        {
+            "data": {
+                "id": "15",
+                "kind": "ExternalJar",
+                "name": "apache-utils.jar",
+                "jdk": "1.7_3_3",
+                "size": "9 MB",
+                "classes": "37"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "data": {
+                "source": "01",
+                "target": "02"
+            }
+        },
+        {
+            "data": {
+                "source": "01",
+                "target": "03"
+            }
+        },
+        {
+            "data": {
+                "source": "01",
+                "target": "04"
+            }
+        },
+        {
+            "data": {
+                "source": "02",
+                "target": "05"
+            }
+        },
+        {
+            "data": {
+                "source": "02",
+                "target": "06"
+            }
+        },
+        {
+            "data": {
+                "source": "03",
+                "target": "06"
+            }
+        },
+        {
+            "data": {
+                "source": "07",
+                "target": "03"
+            }
+        },
+        {
+            "data": {
+                "source": "08",
+                "target": "03"
+            }
+        },
+        {
+            "data": {
+                "source": "09",
+                "target": "03"
+            }
+        },
+        {
+            "data": {
+                "source": "10",
+                "target": "03"
+            }
+        },
+        {
+            "data": {
+                "source": "11",
+                "target": "03"
+            }
+        },
+        {
+            "data": {
+                "source": "13",
+                "target": "12"
+            }
+        },
+        {
+            "data": {
+                "source": "14",
+                "target": "12"
+            }
+        },
+        {
+            "data": {
+                "source": "15",
+                "target": "12"
+            }
+        }
+    ]
+}
